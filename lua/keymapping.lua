@@ -18,6 +18,7 @@ vim.api.nvim_set_keymap('n', '<leader>p', ':tabp<CR>', { noremap = true, silent 
 vim.api.nvim_set_keymap('n', 'gh', ':Lspsaga lsp_finder<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'ca', ':Lspsaga code_action<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'K', ':Lspsaga hover_doc<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'gd', ':Lspsaga preview_definition<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', 'ff', ':Telescope find_files<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fg', ':Telescope find_grep<CR>', { noremap = true, silent = true })

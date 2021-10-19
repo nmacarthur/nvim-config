@@ -14,8 +14,13 @@ require('plugin-config/nvim-tree')
 require('trouble').setup()
 
 -- Volar language server
-require'lspconfig'.volar.setup{}
+local lspconfig = require('lspconfig')
+
+lspconfig.volar.setup{}
+lspconfig.tsserver.setup{}
 
 -- LSPSaga
 local saga = require('lspsaga')
 saga.init_lsp_saga()
+
+
