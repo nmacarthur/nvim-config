@@ -32,4 +32,8 @@ Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'ryanoasis/vim-devicons'
 
+Plug 'kubejm/jest.nvim'
+
+Plug('nvim-treesitter/nvim-treesitter')
+
 vim.fn['plug#end']()

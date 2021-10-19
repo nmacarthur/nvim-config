@@ -44,8 +44,8 @@ vim.g.nvim_tree_show_icons = {
 }
 
 vim.g.nvim_tree_icons = {
-    ['default'] = '',
-    ['symlink'] = '',
+    ['default'] = ' ',
+    ['symlink'] = ' ',
     ['git'] = {
         ['unstaged'] = "✗",
        ['staged'] = "✓",
@@ -56,14 +56,14 @@ vim.g.nvim_tree_icons = {
        ['ignored'] = "◌"
     },
     ['folder'] = {
-       ['arrow_open'] = "",
-       ['arrow_closed'] = "",
-       ['default'] = "",
-       ['open'] = "",
-       ['empty'] = "",
-       ['empty_open'] = "",
-       ['symlink'] = "",
-       ['symlink_open'] = "",
+       ['arrow_open'] = ">",
+       ['arrow_closed'] = "<",
+       ['default'] = "-",
+       ['open'] = "|",
+       ['empty'] = "|<",
+       ['empty_open'] = "|>",
+       ['symlink'] = "=",
+       ['symlink_open'] = "=",
     },
     ['lsp'] = {
         ['hint'] = "",
