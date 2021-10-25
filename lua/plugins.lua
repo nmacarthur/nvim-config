@@ -17,6 +17,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'posva/vim-vue'
 Plug 'tpope/vim-surround'
 Plug 'machakann/vim-highlightedyank'
+Plug 'glepnir/dashboard-nvim'
 
 -- LSPSaga
 Plug 'neovim/nvim-lspconfig'

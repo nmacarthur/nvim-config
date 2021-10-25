@@ -11,3 +11,7 @@ vim.api.nvim_command('set encoding=UTF-8')
 
 vim.api.nvim_command('syntax on')
 vim.api.nvim_command('colorscheme dracula')
+
+vim.g.dashboard_default_executive = 'telescope'
+
+vim.g.dashboard_custom_header = {'Yup.'}
