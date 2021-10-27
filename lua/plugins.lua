@@ -37,4 +37,6 @@ Plug 'kubejm/jest.nvim'
 
 Plug('nvim-treesitter/nvim-treesitter')
 
+Plug 'nelsyeung/twig.vim'
+
 vim.fn['plug#end']()
