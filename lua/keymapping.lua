@@ -14,6 +14,11 @@ vim.api.nvim_set_keymap('n', '<leader>l', '<C-w>l', { noremap = true, silent = t
 vim.api.nvim_set_keymap('n', '<leader>n', ':tabn<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>p', ':tabp<CR>', { noremap = true, silent = true })
 
+-- Ggrep 
+vim.api.nvim_set_keymap('n', '<C-]>', ':cnext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-[>', ':cprev<CR>', { noremap = true, silent = true })
+
+
 -- LSP Saga
 vim.api.nvim_set_keymap('n', 'gh', ':Lspsaga lsp_finder<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'ca', ':Lspsaga code_action<CR>', { noremap = true, silent = true })
@@ -25,7 +30,7 @@ vim.api.nvim_set_keymap('n', 'fg', ':Telescope find_grep<CR>', { noremap = true,
 vim.api.nvim_set_keymap('n', 'fb', ':Telescope buffers<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fh', ':Telescope help_tags<CR>', { noremap = true, silent = true })
 
--- Touble mappings
+-- Trouble mappings
 vim.api.nvim_set_keymap("n", "<leader>xx", "<cmd>Trouble<cr>",
   {silent = true, noremap = true}
 )
