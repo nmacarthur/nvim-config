@@ -3,6 +3,7 @@ local Plug = vim.fn['plug#']
 vim.fn['plug#begin']('~/.config/nvim/plugged')
 
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-commentary'
 
 Plug('neoclide/coc.nvim', { branch = 'release'})
 Plug 'neoclide/coc-snippets'
