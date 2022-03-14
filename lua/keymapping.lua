@@ -26,7 +26,7 @@ vim.api.nvim_set_keymap('n', 'K', ':Lspsaga hover_doc<CR>', { noremap = true, si
 vim.api.nvim_set_keymap('n', 'gd', ':Lspsaga preview_definition<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', 'ff', ':Telescope find_files<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'fg', ':Telescope find_grep<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'fa', ':Telescope live_grep<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fb', ':Telescope buffers<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fh', ':Telescope help_tags<CR>', { noremap = true, silent = true })
 
@@ -50,3 +50,5 @@ vim.api.nvim_set_keymap("n", "gR", "<cmd>Trouble lsp_references<cr>",
   {silent = true, noremap = true}
 )
 
+-- Vim-test mappings
+vim.api.nvim_set_keymap("n", "<leader>tt", ":TestSuite<CR>", { noremap = true, silent = true });

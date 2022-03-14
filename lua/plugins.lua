@@ -19,6 +19,7 @@ Plug 'posva/vim-vue'
 Plug 'tpope/vim-surround'
 Plug 'machakann/vim-highlightedyank'
 Plug 'glepnir/dashboard-nvim'
+Plug 'tpope/vim-jdaddy'
 
 -- LSPSaga
 Plug 'neovim/nvim-lspconfig'
@@ -39,5 +40,11 @@ Plug 'kubejm/jest.nvim'
 Plug('nvim-treesitter/nvim-treesitter')
 
 Plug 'nelsyeung/twig.vim'
+
+Plug 'junegunn/goyo.vim';
+Plug 'junegunn/limelight.vim';
+Plug 'junegunn/seoul256.vim';
+
+Plug 'vim-test/vim-test';
 
 vim.fn['plug#end']()
