@@ -47,4 +47,6 @@ Plug 'junegunn/seoul256.vim';
 
 Plug 'vim-test/vim-test';
 
+Plug 'w0rp/ale';
+
 vim.fn['plug#end']()

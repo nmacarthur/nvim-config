@@ -25,3 +25,8 @@ vim.g.dashboard_custom_header = {
     '╚═╝   ╚═╝   ╚══════╝      ╚═══╝  ╚═╝╚═╝     ╚═╝       ╚═╝   ╚═╝╚═╝     ╚═╝╚══════╝',
 }
                                                                                   
+-- Ale linting
+vim.g.ale_fixers = { typescript = 'eslint' }
+vim.g.ale_sign_error = '✕';
+vim.g.ale_sign_warning = '⚠️'
+vim.g.ale_fix_on_save = 1;
