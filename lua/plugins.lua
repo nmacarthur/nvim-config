@@ -25,15 +25,11 @@ Plug 'glepnir/lspsaga.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
 
-Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'tree-sitter/tree-sitter-typescript'
-
-
 Plug 'folke/trouble.nvim'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
--- Plug 'vim-test/vim-test';
+Plug 'vim-test/vim-test';
 
 vim.fn['plug#end']()

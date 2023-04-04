@@ -35,9 +35,18 @@ vim.api.nvim_set_keymap("n", "<leader>xq", "<cmd>Trouble quickfix<cr>", {silent 
 vim.api.nvim_set_keymap("n", "gR", "<cmd>Trouble lsp_references<cr>", {silent = true, noremap = true})
 
 -- Vim-test mappings
--- vim.api.nvim_set_keymap("n", "<leader>tt", ":TestSuite<CR>", { noremap = true, silent = true });
+vim.api.nvim_set_keymap("n", "<leader>tt", ":TestSuite<CR>", { noremap = true, silent = true });
+vim.api.nvim_set_keymap("n", "<leader>t", ":TestFile<CR>", { noremap = true, silent = true });
 
 -- NvimTree
 vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>r', ':NvimTreeRefresh<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>F', ':NvimTreeFindFile<CR>', { noremap = true, silent = true })
+
+function newWindowWithDeno()
+    vim.cmd('vs')
+    vim.cmd('wincmd w')
+    vim.cmd('terminal deno')
+end
+
+vim.api.nvim_create_user_command('Deno', newWindowWithDeno, {});
